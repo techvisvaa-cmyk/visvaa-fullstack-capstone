@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="NOVA — a responsive, modern product catalog capstone demonstrating modular JavaScript, client-side routing, and optimized assets.">
+  <title>NOVA — Everyday essentials, elevated</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <div class="announcement">Free shipping on orders over ₹2,000 <span>·</span> Thoughtful design, made simple</div>
+  <header class="site-header">
+    <a class="logo" href="#/" aria-label="NOVA home"><span class="logo-mark">N</span> NOVA<span class="logo-period">.</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#/" data-nav="home">Home</a>
+      <a href="#/shop" data-nav="shop">Shop all</a>
+      <a href="#/about" data-nav="about">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" id="search-toggle" aria-label="Focus product search" title="Search">⌕</button>
+      <a class="cart-link" href="#/cart" aria-label="Shopping cart">Bag <span id="cart-count" class="cart-count">0</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+    <a href="#/">Home</a><a href="#/shop">Shop all</a><a href="#/about">Our story</a><a href="#/cart">Shopping bag</a>
+  </nav>
+
+  <main id="app" tabindex="-1">
+    <div class="loading-state"><span class="spinner"></span> Loading NOVA…</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div><a class="logo footer-logo" href="#/"><span class="logo-mark">N</span> NOVA<span class="logo-period">.</span></a><p>Useful things. Beautifully considered.</p></div>
+      <div class="footer-links"><a href="#/shop">Shop</a><a href="#/about">Our story</a><a href="mailto:hello@nova.example">Contact</a></div>
+      <div class="footer-note">Designed for everyday living.<br>Made as a web development capstone.</div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> NOVA Studio</span><span>Built with HTML, CSS &amp; JavaScript</span></div>
+  </footer>
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
